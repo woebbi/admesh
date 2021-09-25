@@ -1,6 +1,11 @@
-aclocal.m4
 admesh
 admesh-*/
+cmake-build-debug/
+.idea/
+.libs/
+m4/
+.deps/
+aclocal.m4
 ar-lib
 autom4te.cache
 config.guess
@@ -11,10 +16,8 @@ config.status
 config.sub
 configure
 depcomp
-.deps/
 install-sh
 *.la
-.libs/
 libtool
 *.lo
 ltmain.sh
@@ -22,7 +25,6 @@ Makefile
 Makefile.in
 missing
 mkinstalldirs
-m4/
 *.o
 *.pc
 stamp-h1
