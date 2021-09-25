@@ -71,12 +71,12 @@ File type          : ASCII STL file\n");
   fprintf(file, "\
 Header             : %s\n", stl->stats.header);
   fprintf(file, "============== Size ==============\n");
-  fprintf(file, "Min X = % f, Max X = % f\n",
-          stl->stats.min.x, stl->stats.max.x);
-  fprintf(file, "Min Y = % f, Max Y = % f\n",
-          stl->stats.min.y, stl->stats.max.y);
-  fprintf(file, "Min Z = % f, Max Z = % f\n",
-          stl->stats.min.z, stl->stats.max.z);
+  fprintf(file, "Min X = % f, Max X = % f, Total X = % f\n",
+          stl->stats.min.x, stl->stats.max.x, stl->stats.size.x);
+  fprintf(file, "Min Y = % f, Max Y = % f, Total Y = % f\n",
+          stl->stats.min.y, stl->stats.max.y, stl->stats.size.y);
+  fprintf(file, "Min Z = % f, Max Z = % f, Total Z = % f\n",
+          stl->stats.min.z, stl->stats.max.z, stl->stats.size.z);
 
   fprintf(file, "\
 ========= Facet Status ========== Original ============ Final ====\n");
